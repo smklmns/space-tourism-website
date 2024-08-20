@@ -1,0 +1,70 @@
+.pickYourDestinationBox {
+  display: flex;
+  margin-top: 400px;
+  width: 88%;
+  height: fit-content;
+}
+
+.destinationPictureBox {
+  width: 500px;
+
+  display: flex;
+  justify-content: end;
+  margin-right: 50px;
+  color: rgba(128, 128, 128, 0.578)
+}
+
+.destinationPictureBox img {
+  height: 480px;
+  width: 480px;
+}
+
+.choosePlanetBox {
+  margin-left: 50px;
+  max-width: 40%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.choosePlanetBox ul {
+  grid-column: 1 / 3;
+}
+
+.planetNameBox  {
+  grid-column: 1 / 3;
+}
+
+.descriptionBox {
+  grid-column: 1 / 3;
+}
+
+.choosePlanetBox ul li {
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  transition: 0.5s;
+}
+
+
+
+.choosePlanetBox ul hr {
+  width: 0;
+  height: 0;
+  margin-right: 20px;
+}
+
+.avgDistanceBox, .travelTimeBox {
+  margin-top: 40px;
+}
+
+.distanceHeading, .travelHeading {
+  font-size: 14px;
+  font-family: Barlow Condensed;
+  letter-spacing: 2px;
+}
+
+.distance, .travelTime {
+  font-family: Bellefair;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: white;
+}

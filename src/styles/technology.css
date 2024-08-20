@@ -1,0 +1,71 @@
+.technologyBox {
+  height: 76%;
+  margin-top: 300px;
+  width: 88%;
+}
+
+.leftTechBox {
+  width: 50%;
+}
+
+.rightTechBox {
+  height: fit-content;
+  width: 45%;
+}
+
+.rightTechBox img {
+  width: 100%;
+}
+
+.techContentBox ul {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.techContentBox hr {
+  width: 0;
+  height: 0;
+  margin-bottom: 30px;
+}
+
+.techContentBox ul li {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.296);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-family: Bellefair;
+  transition: 0.3s;
+}
+
+.techContentBox ul li:hover,
+.techContentBox ul li:focus {
+  border: 1px solid rgba(255, 255, 255, 0.663);
+  
+}
+
+.techContentBox ul li button {
+  outline: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: 0.3s;
+
+}
+
+.techContentBox ul li button:focus {
+  background-color: white;
+  color: black;
+}
+
+.techContentBox h4 {
+  color: grey;
+}

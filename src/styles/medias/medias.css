@@ -1,0 +1,180 @@
+@media (min-width: 1100px) {
+  .firstNavLink:hover,
+.secondNavLink:hover,
+.thirdNavLink:hover,
+.fourthNavLink:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.632) !important;
+}
+}
+
+@media (max-width: 1100px) {
+  .navLongLine {
+    z-index: 0;
+    width: 25%;
+  }
+
+  .navUl, .navUlClosed {
+    width: 65%;
+  }
+}
+
+@media (max-width: 900px) {
+  .navBox {
+    justify-content: space-between;
+    top: 0;
+  }
+
+  .navLongLine {
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+
+  .navUl, .navUlClosed {
+    width: 86%;
+    justify-content: space-evenly;
+   
+  }
+
+  .starImgBox {
+    width: 14%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navUl hr, .navUlClosed hr {
+    margin: 0;
+  }
+
+  .planetNameBox h2:nth-child(1),
+.descriptionBox p:nth-child(1),
+.avgDistanceBox p:nth-child(2),
+.travelTimeBox p:nth-child(2),
+.crewTextBox h4:nth-child(1),
+.crewTextBox h3:nth-child(3),
+.crewTextBox p:nth-child(5),
+.techTextBox h3:nth-child(2),
+.techTextBox p:nth-child(4) {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+  
+}
+
+@media(max-width: 480px) {
+  .navBox {
+   height: 6rem;
+   
+  }
+
+  .starImgBox {
+    margin-left: 4%;
+  }
+
+  .navUl {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: unset;
+    width: 65%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    z-index: 20;
+  }
+
+  .navUl, .navUlClosed {
+    transition: 1.5s;
+  }
+
+  .navUl::before,
+  .navUlClosed::before {
+    content: '';
+    height: 100px;
+  }
+
+  .navUl li,
+  .navUlClosed li {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    position: relative;
+  }
+
+  .navUl li a,
+  .navUlClosed li a {
+    height: 3rem;
+    margin-left: 20px;
+    border-bottom: none !important;
+  }
+
+  .navUl hr,
+  .navUlClosed hr {
+    margin: 20px 0;
+    
+  }
+
+   .firstNavLinkSmallSelected::after, 
+   .secondNavLinkSmallSelected::after, 
+   .thirdNavLinkSmallSelected::after, 
+   .fourthNavLinkSmallSelected::after {
+    content: '';
+    height: 1.1rem;
+    position: absolute;
+    right: 0;
+    width: 3px;
+    background-color: white;
+  }
+
+  .firstNavHr {
+    margin: 0;
+  }
+
+  .hamburgerBox {
+    display:initial;
+    margin-right: 4%;
+    z-index: 30;
+  }
+
+  .navUlClosed {
+    position: fixed;
+    right: -65%;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    height: unset;
+    width: 65%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    z-index: 20;
+  }
+
+
+  h1 {
+    font-size: 90px;
+  }
+
+  h2 {
+    font-size: 80px;
+  }
+
+  h3 {
+    font-size: 38px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --very-dark-navy: rgb(11, 13, 23);
+  --light-blue: rgb(208, 214, 249);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Barlow Condensed;
+}
+
+
+body {
+  min-height: 100vh;
+  color: white;
+}
+
+@media (prefers-reduced-motion: reduce) {  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+.homeBgBox, .destinationBgBox, .crewBgBox, .techBgBox {
+  min-height: 140vh;
+  display: flex;
+  
+  background-size: cover ;
+  background-attachment: fixed;
+}
+
+h1,h2,h3,h4 {
+  font-family: Bellefair;
+}
+
+h1 {
+  font-size: 144px;
+}
+
+h2 {
+  font-size: 100px;
+}
+
+h3 {
+  font-size: 56px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 28px;
+  font-family: Barlow Condensed;
+  letter-spacing: 4px;
+}
+
+p {
+  font-family: Barlow;
+  font-size: 18px;
+  line-height: 180%;
+  color: var(--light-blue);
+}
+
+.homeBgBox {
+  background-image: url("/fMentorFiles/starter-code/assets/home/background-home-desktop.jpg");
+
+}
+
+.destinationBgBox {
+  background-image: url("/fMentorFiles/starter-code/assets/destination/background-destination-desktop.jpg");
+
+}
+
+.crewBgBox {
+  background-image: linear-gradient(to bottom , rgba(0, 0, 0, 0.3) 60%, black 99%),url("/fMentorFiles/starter-code/assets/crew/background-crew-desktop.jpg") ;
+  background-position: 0 40%;
+
+}
+
+.techBgBox {
+  background-image: url('/fMentorFiles/starter-code/assets/technology/background-technology-desktop.jpg');
+
+}
+
+.navBox {
+  top: 6%;
+  right: 0;
+  left: 0;
+  font-family: Barlow Condensed;
+}
+
+.navLongLine {
+  margin-right: -40px;
+  z-index: 1;
+  border-color: rgba(255, 255, 255, 0.247);
+}
+
+.navUl, .navUlClosed {  
+  /* Glassy effect */
+  background: rgba(75, 87, 95, 0.205);
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.422);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  text-wrap: nowrap;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+}
+
+.navUl li a, .navUlClosed li a{
+  letter-spacing: 2px;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.navUl hr, .navUlClosed hr {
+  width: 0;
+  height: 0;
+  margin-right: 40px;
+}
+
+.navUl span, .navUlClosed span {
+  color: white;
+  margin-right: 10px;
+}
+
+span {
+  color: rgba(128, 128, 128, 0.578);
+  font-weight: bold;
+}
+
+.hamburgerBox {
+  z-index: 1;
+  display: none;
+}
+
+li {
+  cursor: pointer;
+}

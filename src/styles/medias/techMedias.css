@@ -1,0 +1,83 @@
+@media(max-width: 900px) {
+  .techBgBox {
+    justify-content: center;
+  }
+
+  .technologyBox {
+    width: 100%;
+   height: fit-content;
+  }
+
+  .technologyBox > * {
+    margin-bottom: 50px;
+  }
+
+  .techBgBox h5 {
+    left: 50px;
+    top: 140px;
+  }
+
+  .technologyBox {
+    flex-direction:column-reverse;
+    height: fit-content;
+    align-items: center;
+  }
+
+  .techContentBox {
+    display: initial;
+    text-align: center;
+  }
+
+  .leftTechBox {
+    width: 80%;
+  }
+  
+  .rightTechBox {
+    width: 100%;
+    height: 50%;
+
+  }
+
+  .rightTechBox img{
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .techContentBox ul {
+    flex-direction: row;
+    margin-bottom: 50px;
+    margin-right: 0;
+  }
+  .techContentBox hr {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+}
+
+@media(max-width: 480px) {
+  .techBgBox {
+    background-image: url('/fMentorFiles/starter-code/assets/technology/background-technology-mobile.jpg');
+  }
+
+  .techBgBox h5 {
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .rightTechBox img {
+    width: 100%;
+    height: fit-content;
+   }
+
+  .techContentBox ul li {
+    height: 56px;
+    width: 56px;
+    font-size: 1.5rem;
+  }
+
+  .techTextBox h3 {
+    padding: 20px 0;
+  }
+
+}

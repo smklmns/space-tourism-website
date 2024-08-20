@@ -1,0 +1,125 @@
+@media (min-width: 1100px) {
+  .choosePlanetBox ul li:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.545) !important;
+  }
+}
+
+@media(max-width: 1100px) {
+ 
+  .pickYourDestinationBox {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .destinationPictureBox {
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  .destinationPictureBox img {
+    height: 400px;
+    width: 400px;
+  }
+
+  .choosePlanetBox {
+    margin-left: 0;
+  }
+
+  .choosePlanetBox h2 {
+    font-size: 90px;
+  }
+
+  h5 {
+    left: 10% !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .destinationBgBox {
+    justify-content: center;
+
+  }
+
+  .destinationBgBox h5 {
+    top: 140px;
+    left: 50px;
+  }
+  /* .destinationsContentBox {
+    margin-top: 140px;
+  } */
+
+  .pickYourDestinationBox {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 280px;
+    width: 76%;
+  }
+
+  .destinationPictureBox {
+    margin-right: 0;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+
+  .choosePlanetBox {
+    max-width: fit-content;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+
+  .choosePlanetBox ul {
+    justify-content: center;
+  }
+}
+
+@media(max-width: 480px) {
+  .destinationBgBox {
+    background-image: url('/fMentorFiles/starter-code/assets/destination/background-destination-mobile.jpg');
+    /* justify-content: end; */
+    width: 100%;
+  }
+
+  .pickYourDestinationBox {
+    width: 80%;
+    margin-top: 200px;
+  }
+
+  .destinationPictureBox {
+    width: fit-content;
+  }
+
+  .destinationPictureBox img {
+    height: 220px;
+    width: 220px;
+  }
+
+  .choosePlanetBox {
+    margin-bottom: 30px;
+  }
+
+  .choosePlanetBox ul {
+    margin-bottom: 20px;
+  }
+
+  .destinationBgBox h5 {
+    top: 110px;
+    left: 0;
+    right: 0;
+    /* margin: auto; */
+    text-align: center;
+  }
+
+  .avgDistanceBox, .travelTimeBox {
+    grid-column: 1 / 3;
+  }
+
+  .travelTimeBox {
+    margin-top: 20px;
+  }
+
+  
+  .choosePlanetBox h2 {
+    font-size: 80px;
+  }
+}

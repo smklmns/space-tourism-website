@@ -1,0 +1,70 @@
+.crewInfoBox {
+  margin-top: 200px;
+  width: 88%;
+  display: grid;
+  grid-template-columns: 40% 55%;
+  grid-template-rows: 35% 55% 10%;
+  column-gap: 40px;
+  min-height: 900px;
+  
+}
+
+.crewTextBox {
+  grid-column: 1 / 2;
+}
+
+.crewLinks {
+  grid-column: 1 / 2;
+}
+
+.personPicture {
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+}
+
+.crewLinks li {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.284);
+  transition: 0.5s;
+}
+
+.crewLinks li button:focus  {
+  background-color: rgba(255, 255, 255, 0.651) !important;
+}
+
+.crewLinks li button {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  outline: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+
+
+.crewLinks hr {
+  width: 0;
+  height: 0;
+  margin-right: 40px;
+}
+
+.personPicture img{
+  align-self:flex-end;
+}
+
+.personPicture::before {
+  content: '';
+  position: absolute;
+  bottom : 0;
+  height: 20%;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0), transparent);
+
+}

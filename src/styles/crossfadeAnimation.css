@@ -1,0 +1,64 @@
+.destinationPictureBox img:nth-child(1),
+.planetNameBox h2:nth-child(1),
+.descriptionBox p:nth-child(1),
+.avgDistanceBox p:nth-child(2),
+.travelTimeBox p:nth-child(2),
+.crewTextBox h4:nth-child(1),
+.crewTextBox h3:nth-child(3),
+.crewTextBox p:nth-child(5),
+.personPicture img:nth-child(1),
+.techTextBox h3:nth-child(2),
+.techTextBox p:nth-child(4),
+.rightTechBox img:nth-child(1)
+{
+  position: absolute;
+  opacity: 0;
+  animation-name: crossfade;
+  animation-duration: 1.5s;
+}
+
+.destinationPictureBox img:nth-child(2),
+.planetNameBox h2:nth-child(2),
+.descriptionBox p:nth-child(2),
+.avgDistanceBox p:nth-child(3),
+.travelTimeBox p:nth-child(3),
+.crewTextBox h4:nth-child(2),
+.crewTextBox h3:nth-child(4),
+.crewTextBox p:nth-child(6),
+.personPicture img:nth-child(2),
+.techTextBox h3:nth-child(3),
+.techTextBox p:nth-child(5),
+.rightTechBox img:nth-child(2)
+
+{
+  animation-name: current;
+  animation-duration: 1.5s;
+}
+
+
+
+
+@keyframes crossfade {
+  0% {
+    opacity: 1;
+  }
+  36% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes current {
+  0% {
+    opacity: 0;
+  }
+  36% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
