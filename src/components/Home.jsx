@@ -22,7 +22,6 @@ const Home = ({setNavLink}) => {
       </div>
 
       <div className='exploreBox flex items-center justify-center'>
-        {/* <div className='startButtonHover h-80 w-80 opacity-90 flex items-center justify-center'> */}
         <Link to='/destinations/*' 
         className='text-black h-64 w-64 bg-white  text-3xl flex items-center justify-center' 
         onClick={() => {
@@ -40,7 +39,6 @@ const Home = ({setNavLink}) => {
           EXPLORE
         
         </Link>
-        {/* </div> */}
       </div>
 
       </div>
